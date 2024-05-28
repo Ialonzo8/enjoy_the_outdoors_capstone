@@ -4,45 +4,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enjoy The Outdoors - Mountains</title>
+  <title>ENJOY THE OUTDOORS - Mountains</title>
+  <link rel="icon" href="images/cartoonMnt.png" type="image/x-icon" />
   <!-- Bootstrap CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index.css">
+
 </head>
 
 <body>
-
-  <header class="mb-3">
-    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Enjoy The Outdoors</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-            <a class="nav-link" href="national_parks.html">National Parks</a>
-            <a class="nav-link active" href="mountains.html">Mountains</a>
+  <div id="main" class="mountainp">
+    <div id="wrap">
+      <header class="mb-3">
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">ENJOY THE OUTDOORS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="national_parks.html">National Parks</a>
+                <a class="nav-link active" href="mountains.html">Mountains</a>
+              </div>
+            </div>
           </div>
-        </div>
+        </nav>
+      </header>
+
+      <h1 class="text-center text-white">Mountain Information</h2>
+
+      <div class="d-flex justify-content-center">
+        <select id="mountainInfo" class="mb-3"></select>
       </div>
-    </nav>
-  </header>
 
-  <h1>Mountains</h1>
+      <div id="noMountain" class="text-center ">
+        <h3 class="text-white">Select a Mountain to view details</h3>
+      </div>
 
-  <!-- Bootstrap JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+      <div id="mountainCards" style="display: none;"></div>
 
-  <!-- data files for mountains page -->
-  <script src="scripts/data/mountainData.js"></script>
 
-   <!-- js for mountains page  -->
-   <script src="scripts/mountains.js"></script>
+      <div id="footer">
+        <footer class="navbar-dark bg-dark text-center ">
 
+          <div class="text-center p-3">
+            <div id="foot">
+              © 2024 - Enjoy The Outdoors
+            </div>
+          </div>
+      </div>
+      </footer>
+    </div>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+
+    <!-- data files for mountains page -->
+    <script src="scripts/data/mountainData.js"></script>
+
+    <!-- js for mountains page  -->
+    <script src="scripts/mountains.js"></script>
+  </div>
 </body>
+
 </html>

@@ -1,35 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enjoy The Outdoors</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<body>
 
-    <header class="mb-3">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enjoy The Outdoors</title>
+  <link rel="icon" href="images/cartoonMnt.png" type="image/x-icon" />
+  <!-- Bootstrap CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body class="bg-dark">
+  <div id="main">
+    <div id="wrap">
+      <header>
         <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Enjoy The Outdoors</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  <a class="nav-link" href="national_parks.html">National Parks</a>
-                  <a class="nav-link" href="mountains.html">Mountains</a>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">ENJOY THE OUT DOORS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="national_parks.html">National Parks</a>
+                <a class="nav-link" href="mountains.html">Mountains</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <section id="carousel-section">
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/mountain3.jpg" class="d-block w-100" alt="Basin park">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Majestic Mountains</h5>
+                <p> Mountains have long captivated the imagination of adventurers, poets, and nature enthusiasts alike.
+                  Their towering peaks, rugged terrain, and awe-inspiring vistas evoke a sense of wonder and reverence
+                  for the natural world.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/mountain15.avif" class="d-block w-100" alt="Glacier park">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Kluane National Park and Reserve</h5>
+                <p>Kluane National Park and Reserve are two units of Canada's national park system, located in the
+                  extreme southwestern corner of the territory of Yukon. Kluane National Park Reserve was established in
+                  1972, covering 22,013 square kilometers (8,499 square miles).</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/mountain20.jpg" class="d-block w-100" alt="Guapalupe peak">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Guadalupe Peak, Texas</h5>
+                <p>Guadalupe Peak, also known as Signal Peak, is the highest natural point in Texas</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section id="mountain-cards">
+        <div class="homessections" class="page-row">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div class="col">
+                <div class="h-100 card">
+                  <img src="images/mountain4.jpg" class="card-img-top" alt="The cliffs in yosemite national park">
+                  <div class="card-body">
+                    <h2 class="text-center card-title" id="title">National Parks</h5>
+                      <p class="text-center card-text">Visit our National Parks search page to find the park that is
+                        just right for you!</p>
+                      <div class="d-flex justify-content-center card-footer">
+                        <a href="national_parks.html" class="btn btn-dark">National Parks Search
+                        </a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="h-100 card">
+                  <img src="images/mountains6.jpg" class="card-img-top" alt="skyline view of mountains">
+                  <div class="card-body">
+                    <h2 class="text-center card-title" id="title">The Mountains</h5>
+                      <p class="text-center card-text">Visit our Mountains Page to explore the details of 48 different
+                        mountains.</p>
+                      <div class="d-flex justify-content-center card-footer">
+                        <a href="mountains.html" class="btn btn-dark">Mountain Information</a>
+                      </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </nav>
-    </header>
+          </div>
+        </div>
+      </section>
+    </div>
 
-    <h1>Welcome!</h1>
+    <footer class="navbar-dark bg-dark text-center">
+      <div class="text-center p-3">
+        <div class="footer-text">
+          © 2024 - Enjoy The Outdoors
+        </div>
+      </div>
+  </div>
+  </footer>
 
-    <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
